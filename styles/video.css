@@ -1,0 +1,134 @@
+.photo {
+    width: 100%;
+}
+
+
+.video-title {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.video-author,
+.video-stats {
+    font-size: 13px;
+    color: rgb(96,96,96);
+}
+.video-author {
+    margin-bottom: 4px;
+}
+
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50%;
+}
+
+
+.thumbnail-row {
+    margin-bottom:8px;
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-title {
+        font-size: 16px; 
+        line-height: 24px;
+    }
+    .video-author,
+    .video-stats {
+        font-size: 14px;
+    }
+}
+
+.video-time {
+    border-radius: 2px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500px;
+    padding: 4px 4px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+}
+
+.link {
+    text-decoration-line: none;
+}
+
+.link:active,
+.link {
+    color: black;
+}
+
+.channel-picture-container {
+    display: inline-block;
+    position: relative;
+}
+.tooltip_2 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px 3px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.profile-picture-2 {
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+}
+.followers {
+    font-family: Roboto;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.channel-picture:hover .tooltip_2 {
+    opacity: 1;
+}
